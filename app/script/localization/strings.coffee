@@ -188,7 +188,7 @@ z.string.modal_new_device_send_anyway = 'send anyway'
 # Remove device
 z.string.modal_remove_device_button = 'Remove device'
 z.string.modal_remove_device_headline = 'Remove "%device_name"'
-z.string.modal_remove_device_password = 'Enter your password'
+z.string.modal_remove_device_message = 'Enter your password'
 # Session Reset
 z.string.modal_session_reset_headline = 'The session has been reset'
 z.string.modal_session_reset_message_1 = 'If the problem is not resolved,'

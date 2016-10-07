@@ -316,8 +316,8 @@ class z.main.App
     if @first_run or not @repository.user.users().length
       @view.content.switch_content z.ViewModel.content.CONTENT_STATE.WATERMARK
     else if conversation_et = @repository.conversation.get_most_recent_conversation()
-      # @view.content.switch_content z.ViewModel.content.CONTENT_STATE.PREFERENCES_DEVICES
-      amplify.publish z.event.WebApp.CONVERSATION.SHOW, conversation_et
+      @view.content.switch_content z.ViewModel.content.CONTENT_STATE.PREFERENCES_DEVICES
+      # amplify.publish z.event.WebApp.CONVERSATION.SHOW, conversation_et
     else if @repository.user.connect_requests().length
       @view.content.switch_content z.ViewModel.content.CONTENT_STATE.CONNECTION_REQUESTS
 
